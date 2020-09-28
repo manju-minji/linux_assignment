@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ -z $1 ] || [ -z $2 ]
+then
+  echo "input 값은 2개여야 됩니다."
+  exit 0
+fi
+
 if [ $1 -le 0 ]
 then
   echo "첫번째 입력값의 범위가 적절하지 않습니다."
